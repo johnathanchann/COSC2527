@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8781982857992966470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7511346220370179588}
+  - component: {fileID: 3822657197368008241}
+  - component: {fileID: 4486053421467122443}
+  m_Layer: 9
+  m_Name: pathFinding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7511346220370179588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781982857992966470}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3822657197368008241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781982857992966470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2492c52caa954b74a9e8a47ceceb81fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayGridGizmos: 1
+  unwalkableMask:
+    serializedVersion: 2
+    m_Bits: 64
+  dynamicObstacleMask:
+    serializedVersion: 2
+    m_Bits: 512
+  slowMask:
+    serializedVersion: 2
+    m_Bits: 128
+  grassMask:
+    serializedVersion: 2
+    m_Bits: 256
+  gridWorldSize: {x: 90, y: 90}
+  gridSize: 0.5
+  overlapCircleRadius: 1
+  speedMultiplier: 1
+  slowAreaMultiplier: 1
+  grassAreaMultiplier: 0.5
+  includeDiagonalNeighbours: 1
+--- !u!114 &4486053421467122443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781982857992966470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a675752e6189f464e9d65203e5ea87c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleCastRadius: 0.6
+  repulsionStrength: 10
+  repulsionDistance: 3
