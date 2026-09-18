@@ -1,4 +1,4 @@
-## COSC2527
+## COSC2527-A2
 A Unity project developed for **COSC2527 Games and Artificial Intelligence Techniques** at RMIT University, demonstrating game AI algorithms in a survival game setting. A frog must catch flies while evading snakes patrolling the jungle.
 
 ## Algorithms
